@@ -1,0 +1,44 @@
+body {
+    background-color: #8c8c8c;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: #251b1b;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+ul {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+
+.imagendestacada{
+
+    border-style: double;
+}
