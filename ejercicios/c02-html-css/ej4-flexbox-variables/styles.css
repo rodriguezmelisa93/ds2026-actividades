@@ -1,0 +1,102 @@
+
+
+:root {
+    --color-fondo: #8c8c8c;
+    --color-texto: black;
+    --color-lista: white;
+    --borde-redondo: 12px;
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* box-sizing global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 20px;
+}
+
+/* navbar horizontal con flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: var(--borde-redondo);
+    box-shadow: var(--sombra);
+}
+
+h1 {
+    color: var(--color-texto);
+    text-align: center;
+}
+
+h2 {
+    color: #251b1b;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* contenedor 1pal con flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 30px;
+    border-radius: var(--borde-redondo);
+    box-shadow: var(--sombra);
+}
+
+/* img */
+img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* clase personalizada */
+.imagendestacada {
+    border-style: double;
+    border-width: 5px;
+    box-shadow: var(--sombra);
+}
+
+ul {
+    background-color: var(--color-lista);
+    padding: 15px;
+    border-radius: var(--borde-redondo);
+    box-shadow: var(--sombra);
+}
+
+a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--color-texto);
+}
+
+/* Estilo para los enlaces */
+.nav-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+}
+.nav-link:hover {
+    /* Agrego sombra alrededor del enlace */
+    box-shadow: 0px 5px 15px rgba(117, 42, 114, 0.3);
+}
+
+/* Estilo p/la pagina actual */
+.nav-link.active {
+    box-shadow: 1px 4px 6px rgba(117, 42, 114, 0.2);
+    border-radius: 5px; 
+}
