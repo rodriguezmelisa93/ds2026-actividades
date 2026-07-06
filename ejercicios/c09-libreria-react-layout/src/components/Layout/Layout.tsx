@@ -1,27 +1,23 @@
-import type { ReactNode } from "react";
-import { Container, Navbar } from "react-bootstrap";
-//import Footer from "react"; TE FALTA CREAR Y AGREGAR EN EL CONTAINER FOOTER
+//import Footer from "react"; TE FALTA CREAR Y AGREGAR EN EL CONTAINER FOOTER(+adelante)
 
 
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
+type Props = {
+  children: React.ReactNode;
+};
 
+function Layout({ children }: Props) {
+  return (
+    <>
+      <Navbar />
 
-interface LayoutProps { children: ReactNode};
+      <main>{children}</main>
 
-function Layout ({ children}: LayoutProps)
-
-{
-    return(
-
-    
-    <div className= "Layout">
-        <Navbar/>
-        <Container className="py-4">{children}</Container>
-       
-    </div>
-    );
-
+      <Footer />
+    </>
+  );
 }
 
 export default Layout;
-

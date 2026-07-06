@@ -1,5 +1,5 @@
-import NavBar from "../components/Layout/Navbar";
-import DarkVariantExample from "../components/carousel";
+
+import DarkVariantExample from "../components/Carousel";
 import LibroCard from "../components/LibroCard";
 import type { Libro } from "../types/libro";
 
@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <>
-        <NavBar />
+        
         <DarkVariantExample />
 
       <div className="d-flex justify-content-center gap-4 flex-wrap mt-4">

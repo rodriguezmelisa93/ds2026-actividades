@@ -4,13 +4,15 @@ import "./assets/index.css"
 //import { Contacto } from './pages/Contacto';
 //import { LibroDetalle } from './pages/LibroDetalle';
 
-
-import Home from "./pages/Home"
+import Home from "./pages/Home";
+import Layout from "./components/Layout/Layout";
 
 function App() {
-  return <Home />;
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
 
 export default App;
-
-
