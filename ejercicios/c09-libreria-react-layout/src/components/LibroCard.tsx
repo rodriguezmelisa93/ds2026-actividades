@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { useState } from "react";
 import type { Libro } from "../types/libro";
+import { Link } from "react-router-dom";
 
 type Props = {
   libro: Libro;
@@ -34,17 +35,21 @@ function LibroCard({ libro }: Props) {
         <Button variant="primary" className="ms-2">
           ${libro.precio}
         </Button>
+
+        {/* 👇 ESTO VA DENTRO DEL RETURN */}
+        <div className="mt-2">
+          <Link to={`/libros/${libro.id}`}>
+            <Button variant="info">
+              Ver más
+            </Button>
+          </Link>
+        </div>
       </Card.Body>
     </Card>
   );
 }
 
 export default LibroCard;
-
-
-
-
-
 
 
 
